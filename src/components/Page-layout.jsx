@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from "./nav/Navbar";
+import Navbar from './nav/Navbar';
 
 const PageLayout = ({ children }) => (
   <div className="page-layout">
