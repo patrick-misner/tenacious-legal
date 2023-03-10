@@ -25,6 +25,7 @@ export default function Navbar() {
         <>
           <div className="mx-auto p-4 max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="p-2 px-4 text-gray-300">
+            
           <h1>Tenacious Legal Support</h1>
             </div>
             <div className="relative flex h-16 items-center justify-between">
@@ -100,10 +101,12 @@ export default function Navbar() {
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pt-2 pb-3">
               {navigation.map((item) => (
+                item.href? (
                 <Disclosure.Button
                   key={item.name}
                   as="a"
                   href={item.href}
+                  target={item.target}
                   className={classNames(
                     item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                     'block rounded-md px-3 py-2 text-base font-medium'
@@ -112,7 +115,25 @@ export default function Navbar() {
                 >
                   {item.name}
                 </Disclosure.Button>
+                ) : (
+                  <Disclosure.Button
+                  key={item.name}
+                  as={NavLink}
+                  to={item.to}
+                  onClick={() => navigate(item.to)}
+                  className={({ isActive }) =>
+                  `${classNames(
+                    'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    'block rounded-md px-3 py-2 text-base font-medium'
+                  )} ${isActive ? 'bg-gray-900 text-white' : ''}`
+                  }
+                  aria-current="page"
+                >
+                  {item.name}
+                </Disclosure.Button>
+                )
               ))}
+              
             </div>
           </Disclosure.Panel>
         </>
