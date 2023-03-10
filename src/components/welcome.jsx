@@ -1,6 +1,6 @@
 import logo from '../images/shoshone.jpg';
 
-const Carousel = () => (
+const Welcome = () => (
   <>
     <div className="col-span-12 md:col-span-7 text-black px-3 my-3 mr-5">
       <p className="font-bold mb-5 text-xl">
@@ -16,13 +16,14 @@ const Carousel = () => (
         Valley.
       </p>
     </div>
-    <div className="col-span-12 md:col-span-5">
-      <img className="rounded" src={logo} alt="Tenacious Legal Support" />
+    <div className="col-span-12 md:col-span-5 pt-2 my-auto">
+      <img
+        className="rounded shadow-xl"
+        src={logo}
+        alt="Tenacious Legal Support"
+      />
     </div>
-
-    <div className="col-span-12 md:col-span-6">Some other garbage</div>
-    <div className="col-span-12 md:col-span-6">Some other garbage</div>
   </>
 );
 
-export default Carousel;
+export default Welcome;
