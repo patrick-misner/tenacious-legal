@@ -16,7 +16,7 @@ const Welcome = () => (
         Valley.
       </p>
     </div>
-    <div className="col-span-12 md:col-span-5 pt-2 my-auto">
+    <div className="col-span-12 md:col-span-5 pt-2 my-auto hover:scale-105 transition duration-300">
       <img
         className="rounded shadow-xl"
         src={logo}
