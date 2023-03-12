@@ -6,7 +6,7 @@ import logo from '../../images/mark.svg';
 
 const navigation = [
   { name: 'Home', to: '/' },
-  { name: 'Mission', to: '/mission' },
+  { name: 'Frequently Asked Questions', to: '/mission' },
   { name: 'Contact', to: '/contact' },
   {
     name: 'Pricing',
