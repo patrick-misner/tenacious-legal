@@ -6,7 +6,7 @@ export default function ContactDetails() {
       <p className="text-center font-bold text-3xl text-black mb-5">
         Contact Details
       </p>
-      <div className="text-center">
+      <div className="text-center text-black">
         <p>info@tenacious.legal</p>
         <p>148 Blue Lakes Blvd N #385</p>
         <p>Twin Falls, ID 83301</p>
