@@ -1,3 +1,7 @@
+# Gif demo of site
+
+![alt text](src\images\demo1.gif "Demo")
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

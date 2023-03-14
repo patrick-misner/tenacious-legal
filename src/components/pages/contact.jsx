@@ -1,5 +1,6 @@
 import ContactDetails from '../contact-details';
 import ContactTailwind from '../contact-tailwind';
+import Footer from '../footer';
 
 export default function ContactPage() {
   return (
@@ -7,7 +8,8 @@ export default function ContactPage() {
       <div className="p-2 px-4 text-gray-300">
         <div className="p-5 shadow-xl rounded bg-white grid grid-cols-12">
           <ContactTailwind />
-          <ContactDetails />
+          <ContactDetails className="md:order-first" />
+          <Footer />
         </div>
       </div>
     </div>

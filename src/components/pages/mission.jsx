@@ -1,23 +1,18 @@
 import React from 'react';
+import Faq from '../faq';
+import { FaqHeader } from '../faq-header';
+import Footer from '../footer';
 
 const MissionPage = () => (
-  <section className="relative pt-24 pb-28 bg-blueGray-50 overflow-hidden">
-    <img
-      className="absolute bottom-0 left-1/2 transform -translate-x-1/2"
-      src="flaro-assets/images/faqs/gradient.svg"
-      alt=""
-    />
-    <div className="relative z-10 container px-4 mx-auto">
-      <div className="md:max-w-4xl mx-auto">
-        <p className="mb-7 text-sm text-indigo-600 text-center font-semibold uppercase tracking-px">
-          Have any questions?
-        </p>
-        <h2 className="mb-16 text-6xl md:text-8xl xl:text-10xl text-center font-bold font-heading tracking-px-n leading-none">
-          Frequently Asked Questions
-        </h2>
+  <div className="mx-auto p-4 max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div className="p-2 px-4 text-gray-300">
+      <div className="px-5 pt-5 pb-1 px-4 text-black shadow-xl rounded bg-white grid grid-cols-12">
+        <FaqHeader />
+        <Faq />
+        <Footer />
       </div>
     </div>
-  </section>
+  </div>
 );
 
 export default MissionPage;
