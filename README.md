@@ -1,6 +1,6 @@
 # Gif demo of site
 
-![alt text](src\images\demo1.gif "Demo")
+![alt text](/src/images/demo1.gif "Demo")
 
 # Getting Started with Create React App
 
