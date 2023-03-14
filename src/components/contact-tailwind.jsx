@@ -1,5 +1,6 @@
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
+import TailwindAlert from './success';
 
 export default function ContactTailwind() {
   const form = useRef();
@@ -76,22 +77,25 @@ export default function ContactTailwind() {
                         name="message"
                         rows={3}
                         required
+                        maxLength="750"
                         className="px-2 mt-1 block w-full rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:py-1.5 sm:text-sm sm:leading-6"
                         placeholder="Message to Tenacious Legal"
                         defaultValue=""
                       />
                     </div>
+                    <div className="flex justify-end"> 0 / 750</div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="bg-gray-50 px-4 py-3 sm:px-6">
+            <div className="bg-gray-50 px-4 py-3 sm:px-6 flex justify-between items-center">
               <button
                 type="submit"
                 className="inline-flex justify-center rounded-md bg-indigo-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
               >
                 Submit
               </button>
+              <TailwindAlert className="m-3" />
             </div>
           </div>
         </form>
