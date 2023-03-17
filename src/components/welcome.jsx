@@ -13,7 +13,7 @@ const Welcome = () => (
         were trained at Tri-County Process Serving in Boise, Idaho, and have
         worked in conjunction with them in the Magic Valley since 2005. We are
         proud to bring our knowledge, support, and resources to the Magic
-        Valley. Staging test
+        Valley.
       </p>
     </div>
     <div className="col-span-12 md:col-span-5 pt-2 my-auto hover:scale-105 transition duration-300">
