@@ -18,7 +18,7 @@ const ServicesComponent = () => (
       <div className="">
         <ul className="">
           <li className="bg-gray-800 rounded-md text-gray-200 p-2 shadow-l mb-3 hover:scale-105 transition duration-300">
-            Filing and Court Research
+            Foreclosure Auctions
           </li>
           <li className="bg-gray-800 rounded-md text-gray-300 p-2 shadow-l hover:scale-105 transition duration-300">
             Foreclosure Posting
