@@ -16,7 +16,7 @@ jobs:
       - name: Deploy to S3
         uses: jakejarvis/s3-sync-action@master
         with:
-          args: --no-follow-symlinks --delete --exclude '*' --include 'build/*'
+          args: --delete-removed --exclude '*' --include 'build/*'
         env:
           AWS_S3_BUCKET: tenacious-legal
           AWS_REGION: us-west-2
