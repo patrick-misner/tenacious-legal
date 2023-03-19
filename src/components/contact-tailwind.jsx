@@ -26,6 +26,7 @@ export default function ContactTailwind() {
         (result) => {
           setShowSuccess(true);
           form.current.reset();
+          setCount(0);
           setIsLoading(false);
           setShowError(false);
         },
