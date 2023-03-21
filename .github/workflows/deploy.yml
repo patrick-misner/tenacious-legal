@@ -18,7 +18,7 @@ jobs:
         with:
           args: --follow-symlinks --delete
         env:
-          AWS_S3_BUCKET: tenacious-legal
+          AWS_S3_BUCKET: processentry.com
           AWS_REGION: us-west-2
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
