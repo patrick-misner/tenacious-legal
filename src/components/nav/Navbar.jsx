@@ -27,7 +27,7 @@ export default function Navbar() {
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
         <>
-          <div className="mx-auto pb-4 max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="mx-auto pb-4 max-w-7xl px-2 sm:px-6 lg:px-8 sm:pt-4">
             <div className="p-2 px-4 text-gray-300 flex justify-center">
               <img
                 className="hidden h-10 w-auto sm:block px-2"
@@ -40,8 +40,8 @@ export default function Navbar() {
                 alt="Tenacious Legal Support"
               />
             </div>
-            <div className="relative flex h-8 items-center justify-between">
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <div className="flex h-8 items-center justify-between">
+              <div className="inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button */}
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
@@ -55,7 +55,7 @@ export default function Navbar() {
               <div className="flex flex-1 items-center justify-center ">
                 <div className="flex-shrink-0 items-center text-gray-300">
                   <img
-                    className="block h-7 sm:h-8 w-auto sm:hidden px-2"
+                    className="block h-6 w-auto sm:hidden px-2"
                     src={logo}
                     alt="Tenacious Legal Support"
                   />
