@@ -10,7 +10,7 @@ export default function ContactDetails() {
         <p>info@tenacious.legal</p>
         <p>148 Blue Lakes Blvd N #385</p>
         <p>Twin Falls, ID 83301</p>
-        <p>(208) 353-0499</p>
+        <p>(208) 352-0499</p>
         <p>Fax: (800) 391-1841</p>
       </div>
 
