@@ -7,10 +7,21 @@ export default function ContactDetails() {
         Contact Details
       </p>
       <div className="text-center text-black">
-        <p>info@tenacious.legal</p>
+        <p>
+          <a
+            href="mailto:info@tenacious.legal"
+            className="underline text-sky-400"
+          >
+            info@tenacious.legal
+          </a>
+        </p>
         <p>148 Blue Lakes Blvd N #385</p>
         <p>Twin Falls, ID 83301</p>
-        <p>(208) 352-0499</p>
+        <p>
+          <a href="tel:2083520499" className="underline text-sky-400">
+            (208) 352-0499
+          </a>
+        </p>
         <p>Fax: (800) 391-1841</p>
       </div>
 
