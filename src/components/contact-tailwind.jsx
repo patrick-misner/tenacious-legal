@@ -17,10 +17,10 @@ export default function ContactTailwind() {
 
     emailjs
       .sendForm(
-        'service_zi1utdn',
-        'template_dw2odi7',
+        'service_99yf77q',
+        'template_qcwhmem',
         form.current,
-        'e7Qt7K6SGxLqApg_c'
+        '71OLrJCywHQK3oCMD'
       )
       .then(
         (result) => {

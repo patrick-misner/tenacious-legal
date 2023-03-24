@@ -2,7 +2,7 @@ import contactImg from '../images/contact.jpg';
 
 export default function ContactDetails() {
   return (
-    <div className="col-span-12 md:col-span-6 bg-white bg-white px-4 py-5">
+    <div className="col-span-12 md:col-span-6 bg-white bg-white px-4 py-5 order-first md:order-none">
       <p className="text-center font-bold text-3xl text-black mb-5">
         Contact Details
       </p>
