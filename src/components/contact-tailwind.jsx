@@ -39,18 +39,18 @@ export default function ContactTailwind() {
   };
   return (
     <div className="sm:mt-0 col-span-12 md:col-span-6">
-      <p className="text-center font-bold text-3xl text-black mb-5">
+      <p className="text-center font-bold text-3xl text-black dark:text-white mb-5">
         Contact Us
       </p>
       <div className="mt-5 md:mt-0">
         <form ref={form} onSubmit={sendEmail} method="POST">
           <div className="overflow-hidden shadow sm:rounded-md">
-            <div className="bg-white px-4 py-5 sm:p-6">
+            <div className="px-4 py-5 sm:p-6">
               <div className="grid grid-cols-12">
                 <div className="col-span-12 md:col-span-6">
                   <label
                     htmlFor="name"
-                    className="block text-sm font-medium leading-6 text-gray-900"
+                    className="block text-sm font-medium leading-6 text-gray-900 dark:text-slate-400"
                   >
                     Name
                   </label>
@@ -59,14 +59,14 @@ export default function ContactTailwind() {
                     name="from_name"
                     placeholder="Name"
                     required
-                    className="px-2 mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="dark:bg-slate-600 dark:text-white px-2 mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-400 placeholder:text-gray-400 focus:ring-2 dark:focus:ring-0 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
 
                 <div className="col-span-12 md:col-span-8 mt-5">
                   <label
                     htmlFor="email"
-                    className="block text-sm font-medium leading-6 text-gray-900"
+                    className="block text-sm font-medium leading-6 text-gray-900 dark:text-slate-400"
                   >
                     Email address
                   </label>
@@ -76,14 +76,14 @@ export default function ContactTailwind() {
                     name="user_email"
                     required
                     id="email-address"
-                    className="px-2 mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="dark:bg-slate-600 dark:text-white px-2 mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 dark:focus:ring-0 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
                 <div className="col-span-12 md:col-span-10 mt-5">
                   <div>
                     <label
                       htmlFor="about"
-                      className="block text-sm font-medium leading-6 text-gray-900"
+                      className="block text-sm font-medium leading-6 text-gray-900 dark:text-slate-400"
                     >
                       Message
                     </label>
@@ -93,18 +93,21 @@ export default function ContactTailwind() {
                         rows={3}
                         required
                         maxLength="750"
-                        className="px-2 mt-1 block w-full rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:py-1.5 sm:text-sm sm:leading-6"
+                        className="dark:bg-slate-600 dark:text-white px-2 mt-1 block w-full rounded-md border-0 text-gray-200 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 dark:focus:ring-0 focus:ring-inset focus:ring-indigo-600 sm:py-1.5 sm:text-sm sm:leading-6"
                         placeholder="Message to Tenacious Legal"
                         defaultValue=""
                         onChange={(e) => setCount(e.target.value.length)}
                       />
                     </div>
-                    <div className="flex justify-end"> {count} / 750</div>
+                    <div className="flex justify-end text-gray-200">
+                      {' '}
+                      {count} / 750
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="bg-gray-50 px-4 py-3 md:flex md:justify-between md:text-left text-center items-center">
+            <div className="bg-gray-50 dark:bg-slate-800 px-4 py-3 md:flex md:justify-between md:text-left text-center items-center">
               <button
                 type="submit"
                 disabled={isLoading}
