@@ -2,8 +2,8 @@ import logo from '../images/shoshone.jpg';
 
 const Welcome = () => (
   <>
-    <div className="col-span-12 md:col-span-7 md:text-left text-center text-black px-3 my-3 mr-5">
-      <p className="font-bold mb-5 text-xl text-center">
+    <div className="col-span-12 md:col-span-7 md:text-left text-center px-3 my-3 mr-5">
+      <p className="font-bold mb-5 text-xl dark:text-white text-center">
         Welcome to Tenacious Legal Support
       </p>
       <p className="mb-7">

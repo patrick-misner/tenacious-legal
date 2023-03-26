@@ -28,7 +28,7 @@ export default function Navbar() {
       {({ open }) => (
         <>
           <div className="mx-auto pb-4 max-w-7xl px-2 sm:px-6 lg:px-8 sm:pt-4">
-            <div className="p-2 px-4 text-gray-300 flex justify-center">
+            <div className="p-2 px-4 text-gray-300 dark:text-white flex justify-center">
               <img
                 className="hidden h-10 w-auto sm:block px-2"
                 src={logo2}
