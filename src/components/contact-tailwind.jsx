@@ -107,7 +107,7 @@ export default function ContactTailwind() {
                 </div>
               </div>
             </div>
-            <div className="bg-gray-50 dark:bg-slate-800 px-4 py-3 md:flex md:justify-between md:text-left text-center items-center">
+            <div className="bg-gray-50 dark:bg-slate-900 px-4 py-3 md:flex md:justify-between md:text-left text-center items-center">
               <button
                 type="submit"
                 disabled={isLoading}

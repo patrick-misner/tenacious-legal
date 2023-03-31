@@ -25,7 +25,7 @@ function classNames(...classes) {
 export default function Navbar() {
   const navigate = useNavigate();
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-slate-900">
       {({ open }) => (
         <>
           <div className="mx-auto pb-4 max-w-7xl px-2 sm:px-6 lg:px-8 sm:pt-4">
