@@ -4,6 +4,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { NavLink, useNavigate } from 'react-router-dom';
 import logo from '../../images/logo/png/logo-test3.png';
 import logo2 from '../../images/logo/png/small-logo-test1.png';
+import Switcher from '../switcher';
 
 const navigation = [
   { name: 'Home', to: '/' },
@@ -24,7 +25,7 @@ function classNames(...classes) {
 export default function Navbar() {
   const navigate = useNavigate();
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-slate-900">
       {({ open }) => (
         <>
           <div className="mx-auto pb-4 max-w-7xl px-2 sm:px-6 lg:px-8 sm:pt-4">
@@ -39,6 +40,11 @@ export default function Navbar() {
                 src={logo}
                 alt="Tenacious Legal Support"
               />
+            </div>
+            <div className="flex justify-end">
+              <div className="absolute sm:px-5 pt-1">
+                <Switcher />
+              </div>
             </div>
             <div className="flex h-8 items-center justify-between">
               <div className="inset-y-0 left-0 flex items-center sm:hidden">
