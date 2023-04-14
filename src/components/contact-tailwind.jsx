@@ -93,7 +93,7 @@ export default function ContactTailwind() {
                         rows={3}
                         required
                         maxLength="750"
-                        className="dark:bg-slate-600 dark:text-white px-2 mt-1 block w-full rounded-md border-0 text-gray-200 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 dark:focus:ring-0 focus:ring-inset focus:ring-indigo-600 sm:py-1.5 sm:text-sm sm:leading-6"
+                        className="dark:bg-slate-600 dark:text-white px-2 mt-1 block w-full rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 dark:focus:ring-0 focus:ring-inset focus:ring-indigo-600 sm:py-1.5 sm:text-sm sm:leading-6"
                         placeholder="Message to Tenacious Legal"
                         defaultValue=""
                         onChange={(e) => setCount(e.target.value.length)}
