@@ -91,18 +91,31 @@ export default function Faq() {
         </AccordionBody>
       </Accordion>
       <Accordion
-        className="col-span-12 md:col-start-3 md:col-span-8 mb-5 dark:text-white"
+        className="col-span-12 md:col-start-3 mb-5 md:col-span-8 dark:text-white"
         open={open === 5}
         icon={<Icon id={5} open={open} />}
       >
-        <AccordionHeader className="mb-5" onClick={() => handleOpen(5)}>
+        <AccordionHeader className="" onClick={() => handleOpen(5)}>
           Do you require prepayment?
         </AccordionHeader>
-        <AccordionBody className="dark:text-slate-400">
+        <AccordionBody className="dark:text-slate-400 mt-3">
           Yes. You can send a scan of your check with documents and we can
           process the image. No need to mail the orginal. You can also pay with
           a credit card from our pricing page, and reference the payment when
           you send the documents.
+        </AccordionBody>
+      </Accordion>
+      <Accordion
+        className="col-span-12 md:col-start-3 md:col-span-8 mb-5 dark:text-white"
+        open={open === 6}
+        icon={<Icon id={6} open={open} />}
+      >
+        <AccordionHeader className="mb-5" onClick={() => handleOpen(6)}>
+          Can we email the documents to you?
+        </AccordionHeader>
+        <AccordionBody className="dark:text-slate-400">
+          Yes, our print fee is $0.16/page. We waive the print fee if total
+          service pages are 25 or less.
         </AccordionBody>
       </Accordion>
     </>
