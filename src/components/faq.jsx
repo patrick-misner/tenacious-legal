@@ -5,6 +5,8 @@ import {
   AccordionHeader,
   AccordionBody,
 } from '@material-tailwind/react';
+import venmo from '../images/venmo.png';
+import qrcode from '../images/qr-code.png';
 
 function Icon({ id, open }) {
   return (
@@ -96,13 +98,11 @@ export default function Faq() {
         icon={<Icon id={5} open={open} />}
       >
         <AccordionHeader className="" onClick={() => handleOpen(5)}>
-          Do you require prepayment?
+          Can we email the documents to you?
         </AccordionHeader>
         <AccordionBody className="dark:text-slate-400 mt-3">
-          Yes. You can send a scan of your check with documents and we can
-          process the image. No need to mail the orginal. You can also pay with
-          a credit card from our pricing page, and reference the payment when
-          you send the documents.
+          Yes, our print fee is $0.16/page. We waive the print fee if total
+          service pages are 25 or less.
         </AccordionBody>
       </Accordion>
       <Accordion
@@ -111,11 +111,25 @@ export default function Faq() {
         icon={<Icon id={6} open={open} />}
       >
         <AccordionHeader className="mb-5" onClick={() => handleOpen(6)}>
-          Can we email the documents to you?
+          Do you require prepayment?
         </AccordionHeader>
         <AccordionBody className="dark:text-slate-400">
-          Yes, our print fee is $0.16/page. We waive the print fee if total
-          service pages are 25 or less.
+          Yes, you can send a scan of your check with documents and we can
+          process the image. No need to mail the orginal. You can also pay with
+          a credit card from our pricing page, and reference the payment when
+          you send the documents.
+          <p className="text-center text-lg font-bold pt-2">We accept Venmo</p>
+          <div className="md:flex-row md:justify-center flex flex-col items-center">
+            <a href="https://venmo.com/u/SeanCapps">
+              <img
+                className="h-24 hover:scale-105 transition duration-300 cursor-pointer my-5 px-5"
+                src={venmo}
+                alt="Venmo Icon link"
+              />
+            </a>
+            <img className="h-24 my-5 px-5" src={qrcode} alt="QR code" />
+          </div>
+          <p className="text-center">@SeanCapps</p>
         </AccordionBody>
       </Accordion>
     </>
