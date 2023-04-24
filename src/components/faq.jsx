@@ -118,7 +118,7 @@ export default function Faq() {
           process the image. No need to mail the orginal. You can also pay with
           a credit card from our pricing page, and reference the payment when
           you send the documents.
-          <p className="text-center text-lg font-bold pt-2">Venmo</p>
+          <p className="text-center text-lg font-bold pt-2">We accept Venmo</p>
           <div className="md:flex-row md:justify-center flex flex-col items-center">
             <a href="https://venmo.com/u/SeanCapps">
               <img
