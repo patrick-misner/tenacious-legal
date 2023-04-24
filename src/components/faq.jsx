@@ -114,7 +114,7 @@ export default function Faq() {
           Do you require prepayment?
         </AccordionHeader>
         <AccordionBody className="dark:text-slate-400">
-          Yes. You can send a scan of your check with documents and we can
+          Yes, you can send a scan of your check with documents and we can
           process the image. No need to mail the orginal. You can also pay with
           a credit card from our pricing page, and reference the payment when
           you send the documents.
