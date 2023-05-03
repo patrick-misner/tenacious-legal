@@ -48,9 +48,18 @@ export default function Faq() {
           How much for routine service in (city)?
         </AccordionHeader>
         <AccordionBody className="mt-3 dark:text-slate-400">
-          Please click Pricing to go to our Square page, choose Routine service,
-          and choose your city in the drop-down. Printing is 16 cents/page but
-          we waive the print fee if under 25 pages.
+          Please click{' '}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+            href="https://squareup.com/market/tenacious-legal-support"
+          >
+            Pricing
+          </a>{' '}
+          to go to our Square page, choose Routine service, and choose your city
+          in the drop-down. Printing is 16 cents/page but we waive the print fee
+          if under 25 pages.
         </AccordionBody>
       </Accordion>
       <Accordion
