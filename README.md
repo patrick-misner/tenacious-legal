@@ -1,6 +1,6 @@
 # Tenacious Legal
 
-Production React application built for Tenacious Legal, a large process serving entity in Twin Falls, ID area.
+Production React application built for Tenacious Legal, a legal process serving entity in Twin Falls, ID area.
 
 [Live Website](https://tenacious.legal/)
 
