@@ -2,7 +2,7 @@
 
 Production React application built for Tenacious Legal, a large process serving entity in Twin Falls, ID area.
 
-[Live Website](https://github.com/facebook/create-react-app)
+[Live Website](https://tenacious.legal/)
 
 ## Technologies and Demo
 
