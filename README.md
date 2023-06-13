@@ -6,7 +6,7 @@ Production Website built for Tenacious Legal, a large process serving entity in 
 
 ## Technologies used
 
-  - Amazon S3 and CloudFront
+  - Amazon S3 and CloudFront Global CDN
   - React 18, React Router 6
   - Tailwind
   - Emailjs (contact form)
@@ -17,7 +17,8 @@ Production Website built for Tenacious Legal, a large process serving entity in 
 # Amazon Web Services (cost-effective hosting solution)
 
 1. Add client's MX records and other A records to AWS Route53
-2. Update nameserver records to point to Amazon's Route53 DNS
+2. Update nameserver records to point to Amazon's Route53 DNS (no downtime on email delivery or website)
+3. Create CloudFront distributions and S3 Bucket (tenaciouslegalsupport.com re-route to tenacious.legal) 
 3. Add CloudFront Distribution to primary A record
 4. SSL Enabled with http redirects with CloudFront to protect data sent by contact form
 5. Direct React Routes work with S3 bucket by pointing error document to index.html
