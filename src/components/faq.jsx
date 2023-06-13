@@ -48,18 +48,33 @@ export default function Faq() {
           How much for routine service in (city)?
         </AccordionHeader>
         <AccordionBody className="mt-3 dark:text-slate-400">
-          Please click{' '}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-            href="https://squareup.com/market/tenacious-legal-support"
-          >
-            Pricing
-          </a>{' '}
-          to go to our Square page, choose Routine service, and choose your city
-          in the drop-down. Printing is 16 cents/page but we waive the print fee
-          if under 25 pages.
+          <p>
+            Please click{' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+              href="https://squareup.com/market/tenacious-legal-support"
+            >
+              Pricing
+            </a>{' '}
+            to go to our Square page, choose Routine service, and choose your
+            city in the drop-down. Printing is 16 cents/page but we waive the
+            print fee if under 25 pages.
+          </p>
+          <p className="mt-3">
+            {' '}
+            Rush service and all other fees are available on the{' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+              href="https://squareup.com/market/tenacious-legal-support"
+            >
+              Pricing
+            </a>{' '}
+            page.{' '}
+          </p>
         </AccordionBody>
       </Accordion>
       <Accordion
@@ -84,9 +99,16 @@ export default function Faq() {
           What’s your turnaround time?
         </AccordionHeader>
         <AccordionBody className="mt-3 dark:text-slate-400">
-          First attempts are typically within 1 business day. Our turnaround
-          time is quicker than average. We usually have it served and back to
-          you before you need to ask for status.
+          <p>
+            First attempts are typically within 1 business day. Our turnaround
+            time is quicker than average. We usually have it served and back to
+            you before you need to ask for status.
+          </p>
+          <p className="mt-3">
+            Our cutoff time is 4:00 PM MST. Any rush or routine jobs received
+            after this time will be considered received on the next business
+            day.
+          </p>
         </AccordionBody>
       </Accordion>
       <Accordion

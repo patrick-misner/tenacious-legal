@@ -1,4 +1,4 @@
-import logo from '../images/shoshone.jpg';
+import logo from '../images/actually-shoshone.jpg';
 
 const Welcome = () => (
   <>
