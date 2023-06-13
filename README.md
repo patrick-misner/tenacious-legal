@@ -24,7 +24,7 @@ Production React application built for Tenacious Legal, a legal process serving 
 
 ## Github Deployment Action
 
-  When a pull request from staging to main is merged, a [GitHub action](https://github.com/patrick-misner/tenacious-legal/blob/main/.github/workflows/deploy.yml) is triggered. This action performs several tasks, including installing dependencies, building the create-react app, uploading the new build files to the S3 bucket, and invalidating the CloudFront cache. These actions ensure that updates to the website are quickly reflected globally.
+  When a pull request from staging to main is merged, a [GitHub action](https://github.com/patrick-misner/tenacious-legal/blob/main/.github/workflows/deploy.yml) is triggered. This action performs several tasks, including installing dependencies, building the create-react app, uploading the new build files to the S3 bucket, and invalidating the CloudFront cache so that updates to the website are reflected quickly globally.
 
 ## Legacy Website no SSL
 
