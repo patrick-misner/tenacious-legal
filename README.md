@@ -1,74 +1,32 @@
-# Gif demo of site
+# Tenacious Legal
 
-![alt text](/src/images/demo1.gif "Demo")
+Production React application built for Tenacious Legal, a legal process serving entity in Twin Falls, ID.
 
-# Getting Started with Create React App
+[Live Website](https://tenacious.legal/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Technologies and Demo
 
-## Available Scripts
+  - Amazon Web Services S3 and CloudFront Global CDN
+  - React 18, React Router 6
+  - Tailwind
+  - Emailjs (contact form)
 
-In the project directory, you can run:
+![alt text](/src/images/pdemo3.gif "Demo")
 
-### `npm start`
+## Amazon Web Services (cost-effective hosting solution)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Add client's domains, MX records and other A records to AWS Route53
+2. Update nameserver records to point to Amazon's Route53 DNS (no downtime on email delivery or website)
+3. Create CloudFront distributions and S3 Bucket (tenaciouslegalsupport.com re-route to tenacious.legal) 
+3. Add CloudFront Distribution to primary A record
+4. SSL Enabled with http redirects with CloudFront to protect data sent by contact form
+5. Direct React Routes work with S3 bucket by pointing error document to index.html
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Github Deployment Action
 
-### `npm test`
+  When a pull request from staging to main is merged, a [GitHub action](https://github.com/patrick-misner/tenacious-legal/blob/main/.github/workflows/deploy.yml) is triggered. This action performs several tasks, including installing dependencies, building the create-react app, uploading the new build files to the S3 bucket, and invalidating the CloudFront cache so that updates to the website are reflected quickly for end users accessing any AWS Edge location.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Legacy Website no SSL
 
-### `npm run build`
+![alt text](/src/images/legacy.jpg "Legacy Website")
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
