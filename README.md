@@ -1,6 +1,6 @@
 # Tenacious Legal
 
-Production React application built for Tenacious Legal, a legal process serving entity in Twin Falls, ID area.
+Production React application built for Tenacious Legal, a legal process serving entity in Twin Falls, ID.
 
 [Live Website](https://tenacious.legal/)
 
@@ -24,7 +24,7 @@ Production React application built for Tenacious Legal, a legal process serving 
 
 ## Github Deployment Action
 
-  When a pull request from staging to main is merged, a [github action](https://github.com/patrick-misner/tenacious-legal/blob/main/.github/workflows/deploy.yml) runs that installs dependencies, builds the create-react app, uploads the new build files to the S3 bucket and invalidates the CloudFront cache so updates to the website reflect quickly around the globe.
+  When a pull request from staging to main is merged, a [GitHub action](https://github.com/patrick-misner/tenacious-legal/blob/main/.github/workflows/deploy.yml) is triggered. This action performs several tasks, including installing dependencies, building the create-react app, uploading the new build files to the S3 bucket, and invalidating the CloudFront cache. These actions ensure that updates to the website are quickly reflected globally.
 
 ## Legacy Website no SSL
 
