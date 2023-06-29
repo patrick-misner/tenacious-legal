@@ -1,9 +1,9 @@
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
-import TailwindError from './error';
-import TailwindSuccess from './success';
+import ContactError from './error';
+import ContactSuccess from './success';
 
-export default function ContactForm() {
+const ContactForm = () => {
   const [count, setCount] = useState(0);
   const [showSuccess, setShowSuccess] = useState(false);
   const [showError, setShowError] = useState(false);
@@ -141,12 +141,13 @@ export default function ContactForm() {
                   <p>Submit</p>
                 )}
               </button>
-              {showSuccess && <TailwindSuccess className="m-2" />}
-              {showError && <TailwindError className="m-2" />}
+              {showSuccess && <ContactSuccess className="m-2" />}
+              {showError && <ContactError className="m-2" />}
             </div>
           </div>
         </form>
       </div>
     </div>
   );
-}
+};
+export default ContactForm;

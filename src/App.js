@@ -5,18 +5,16 @@ import DashboardPage from './components/pages/dashboard';
 import FaqPage from './components/pages/faq';
 import ContactPage from './components/pages/contact';
 
-function App() {
-  return (
-    <BrowserRouter>
-      <PageLayout>
-        <Routes>
-          <Route exact path="/" element={<DashboardPage />} />
-          <Route path="/faq" element={<FaqPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-        </Routes>
-      </PageLayout>
-    </BrowserRouter>
-  );
-}
+const App = () => (
+  <BrowserRouter>
+    <PageLayout>
+      <Routes>
+        <Route exact path="/" element={<DashboardPage />} />
+        <Route path="/faq" element={<FaqPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
+    </PageLayout>
+  </BrowserRouter>
+);
 
 export default App;

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export default function useDarkMode() {
+const useDarkMode = () => {
   const [theme, setTheme] = useState(getOSPreference);
 
   function getOSPreference() {
@@ -24,4 +24,5 @@ export default function useDarkMode() {
   }, [theme, colorTheme]);
 
   return [colorTheme, setTheme];
-}
+};
+export default useDarkMode;

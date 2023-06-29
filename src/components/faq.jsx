@@ -6,7 +6,7 @@ import {
   AccordionBody,
 } from '@material-tailwind/react';
 import venmo from '../images/venmo.png';
-import qrcode from '../images/qr-code.png';
+import qrCode from '../images/qr-code.png';
 
 function Icon({ id, open }) {
   return (
@@ -30,7 +30,7 @@ Icon.propTypes = {
   open: PropTypes.bool.isRequired,
 };
 
-export default function Faq() {
+const Faq = () => {
   const [open, setOpen] = useState(1);
 
   const handleOpen = (value) => {
@@ -147,8 +147,16 @@ export default function Faq() {
         <AccordionBody className="dark:text-slate-400">
           Yes, you can send a scan of your check with documents and we can
           process the image. No need to mail the orginal. You can also pay with
-          a credit card from our pricing page, and reference the payment when
-          you send the documents.
+          a credit card from our{' '}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+            href="https://tenacious-legal-support.square.site/"
+          >
+            Pricing page
+          </a>{' '}
+          and reference the payment when you send the documents.
           <p className="text-center text-lg font-bold pt-2">We accept Venmo</p>
           <div className="md:flex-row md:justify-center flex flex-col items-center">
             <a href="https://venmo.com/u/SeanCapps">
@@ -158,11 +166,12 @@ export default function Faq() {
                 alt="Venmo Icon link"
               />
             </a>
-            <img className="h-24 my-5 px-5" src={qrcode} alt="QR code" />
+            <img className="h-24 my-5 px-5" src={qrCode} alt="QR code" />
           </div>
           <p className="text-center">@SeanCapps</p>
         </AccordionBody>
       </Accordion>
     </>
   );
-}
+};
+export default Faq;
