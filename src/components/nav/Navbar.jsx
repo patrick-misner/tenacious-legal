@@ -12,7 +12,7 @@ const navigation = [
   { name: 'Contact', to: '/contact' },
   {
     name: 'Pricing',
-    href: 'https://squareup.com/market/tenacious-legal-support',
+    href: 'https://tenacious-legal-support.square.site/',
     current: false,
     target: '_blank',
   },
@@ -96,7 +96,7 @@ export default function Navbar() {
                             `${classNames(
                               'text-gray-300 hover:bg-gray-700 hover:text-white',
                               'rounded-md px-3 py-2 text-sm font-medium'
-                            )} ${isActive ? 'bg-gray-900 text-cyan-200' : ''}`
+                            )} ${isActive ? 'bg-slate-800 text-cyan-300' : ''}`
                           }
                           aria-current="page"
                         >
