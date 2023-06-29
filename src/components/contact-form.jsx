@@ -3,7 +3,7 @@ import { useRef, useState } from 'react';
 import TailwindError from './error';
 import TailwindSuccess from './success';
 
-export default function ContactTailwind() {
+export default function ContactForm() {
   const [count, setCount] = useState(0);
   const [showSuccess, setShowSuccess] = useState(false);
   const [showError, setShowError] = useState(false);
