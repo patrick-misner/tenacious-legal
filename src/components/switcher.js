@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import useDarkMode from '../hooks/useDarkMode';
 
-export default function Switcher() {
+const Switcher = () => {
   const [colorTheme, setTheme] = useDarkMode();
   const [darkMode, setDarkMode] = useState(colorTheme === 'light');
 
@@ -20,4 +20,5 @@ export default function Switcher() {
       size={20}
     />
   );
-}
+};
+export default Switcher;

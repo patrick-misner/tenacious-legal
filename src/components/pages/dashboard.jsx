@@ -4,7 +4,7 @@ import Welcome from '../welcome';
 import ServiceAreaComponent from '../service-area';
 import Footer from '../footer';
 
-const DashboardPage = () => (
+const dashboardPage = () => (
   <div className="mx-auto p-4 max-w-7xl px-2 sm:px-6 lg:px-8">
     <div className="p-2 px-4 text-gray-300">
       <div className="px-5 pt-5 pb-1 px-4 text-black dark:text-slate-400 shadow-xl rounded bg-white dark:bg-slate-900 grid grid-cols-12">
@@ -17,4 +17,4 @@ const DashboardPage = () => (
   </div>
 );
 
-export default DashboardPage;
+export default dashboardPage;

@@ -22,7 +22,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-export default function Navbar() {
+const NavBar = () => {
   const navigate = useNavigate();
   return (
     <Disclosure as="nav" className="bg-slate-900">
@@ -154,4 +154,5 @@ export default function Navbar() {
       )}
     </Disclosure>
   );
-}
+};
+export default NavBar;

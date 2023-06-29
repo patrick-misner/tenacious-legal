@@ -1,4 +1,4 @@
-import countymap from '../images/county-map.png';
+import countyMap from '../images/county-map.png';
 
 const ServiceAreaComponent = () => (
   <>
@@ -25,7 +25,7 @@ const ServiceAreaComponent = () => (
       <div className="flex justify-center hover:scale-105 transition duration-300">
         <img
           className="object-contain h-72 w-144"
-          src={countymap}
+          src={countyMap}
           alt="Idaho County Map"
         />
       </div>

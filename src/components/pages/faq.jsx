@@ -1,6 +1,6 @@
 import React from 'react';
 import Faq from '../faq';
-import { FaqHeader } from '../faq-header';
+import FaqHeader from '../faq-header';
 import Footer from '../footer';
 
 const FaqPage = () => (

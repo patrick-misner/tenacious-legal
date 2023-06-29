@@ -1,4 +1,4 @@
-export const FaqHeader = () => (
+const FaqHeader = () => (
   <div className="col-span-12">
     <div className="">
       <p className="mb-7 text-sm text-indigo-600 text-center font-semibold uppercase tracking-px">
@@ -10,3 +10,4 @@ export const FaqHeader = () => (
     </div>
   </div>
 );
+export default FaqHeader;
