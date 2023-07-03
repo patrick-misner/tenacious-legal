@@ -1,7 +1,7 @@
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
-import ContactError from './error';
-import ContactSuccess from './success';
+import ContactError from './ContactError';
+import ContactSuccess from './ContactSuccess';
 
 const ContactForm = () => {
   const [count, setCount] = useState(0);

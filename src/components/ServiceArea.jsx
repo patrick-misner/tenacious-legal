@@ -1,6 +1,6 @@
 import countyMap from '../images/county-map.png';
 
-const ServiceAreaComponent = () => (
+const ServiceArea = () => (
   <>
     <div className="col-span-12 px-3">
       <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-300" />
@@ -33,4 +33,4 @@ const ServiceAreaComponent = () => (
   </>
 );
 
-export default ServiceAreaComponent;
+export default ServiceArea;
