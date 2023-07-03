@@ -1,4 +1,4 @@
-const ServicesComponent = () => (
+const ServicesProvided = () => (
   <div className="col-span-12 text-black px-3 my-3">
     <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-300" />
     <div className="flex justify-center">
@@ -29,4 +29,4 @@ const ServicesComponent = () => (
   </div>
 );
 
-export default ServicesComponent;
+export default ServicesProvided;
