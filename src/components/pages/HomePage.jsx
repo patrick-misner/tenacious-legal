@@ -4,7 +4,7 @@ import Welcome from '../Welcome';
 import ServiceAreaComponent from '../ServiceArea';
 import Footer from '../Footer';
 
-const DashBoardPage = () => (
+const HomePage = () => (
   <>
     <Welcome />
     <ServicesComponent />
@@ -13,4 +13,4 @@ const DashBoardPage = () => (
   </>
 );
 
-export default DashBoardPage;
+export default HomePage;

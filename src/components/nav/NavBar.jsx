@@ -4,7 +4,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { NavLink, useNavigate } from 'react-router-dom';
 import logo from '../../images/logo/png/logo-test3.png';
 import logo2 from '../../images/logo/png/small-logo-test1.png';
-import Switcher from '../switcher';
+import Switcher from '../Switcher';
 
 const navigation = [
   { name: 'Home', to: '/' },
