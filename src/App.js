@@ -8,7 +8,7 @@ import FaqPage from './components/pages/FaqPage';
 import ContactPage from './components/pages/ContactPage';
 
 const tagManagerArgs = {
-  gtmId: 'AW-955538351',
+  gtmId: 'G-CZ7YPHQ3Q1',
 };
 TagManager.initialize(tagManagerArgs);
 
