@@ -29,6 +29,9 @@ const ContactForm = () => {
           setCount(0);
           setIsLoading(false);
           setShowError(false);
+          window.dataLayer.push({
+            event: 'contact_form_sent',
+          });
         },
         (error) => {
           console.log(error.text);
