@@ -13,7 +13,7 @@ Production React application built for Tenacious Legal, a legal process serving 
 
 ![alt text](/src/images/pdemo3.gif "Demo")
 
-## Amazon Web Services (cost-effective hosting solution)
+## Amazon Web Services
 
 1. Add client's domains, MX records and other A records to AWS Route53
 2. Update nameserver records to point to Amazon's Route53 DNS (no downtime on email delivery or website)
