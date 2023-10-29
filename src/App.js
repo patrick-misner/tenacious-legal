@@ -6,6 +6,7 @@ import PageLayout from './components/PageLayout';
 import HomePage from './components/pages/HomePage';
 import FaqPage from './components/pages/FaqPage';
 import ContactPage from './components/pages/ContactPage';
+import PricingPage from './components/pages/PricingPage';
 
 const tagManagerArgs = {
   gtmId: 'G-CZ7YPHQ3Q1',
@@ -26,6 +27,7 @@ const App = () => {
           <Route exact path="/" element={<HomePage />} />
           <Route path="/faq" element={<FaqPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/pricing" element={<PricingPage />} />
         </Routes>
       </PageLayout>
     </BrowserRouter>

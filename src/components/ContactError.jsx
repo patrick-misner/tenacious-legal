@@ -3,4 +3,5 @@ const ContactError = () => (
     Message failed to send.
   </div>
 );
+
 export default ContactError;
