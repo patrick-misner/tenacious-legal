@@ -9,13 +9,8 @@ import Switcher from '../Switcher';
 const navigation = [
   { name: 'Home', to: '/' },
   { name: 'Frequently Asked Questions', to: '/faq' },
+  { name: 'Pricing', to: '/pricing' },
   { name: 'Contact', to: '/contact' },
-  {
-    name: 'Pricing',
-    href: 'https://tenacious-legal-support.square.site/',
-    current: false,
-    target: '_blank',
-  },
 ];
 
 function classNames(...classes) {

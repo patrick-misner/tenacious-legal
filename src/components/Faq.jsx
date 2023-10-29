@@ -1,4 +1,5 @@
 import { Fragment, useState } from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {
   Accordion,
@@ -50,30 +51,26 @@ const Faq = () => {
         <AccordionBody className="mt-3 dark:text-slate-400">
           <p>
             Please click{' '}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/pricing"
               className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-              href="https://tenacious-legal-support.square.site/"
             >
               Pricing
-            </a>{' '}
-            to go to our Square page, choose Routine service, and choose your
-            city in the drop-down. Printing is 16 cents/page but we waive the
+            </Link>{' '}
+            to go to our Pricing page, choose your city in the drop-down and
+            other applicable fees. Printing is 16 cents/page but we waive the
             print fee if under 25 pages.
           </p>
           <p className="mt-3">
             {' '}
             Rush service and all other fees are available on the{' '}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/pricing"
               className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-              href="https://tenacious-legal-support.square.site/"
             >
               Pricing
-            </a>{' '}
-            page.{' '}
+            </Link>{' '}
+            page.
           </p>
         </AccordionBody>
       </Accordion>
@@ -147,16 +144,14 @@ const Faq = () => {
         <AccordionBody className="dark:text-slate-400">
           Yes, you can send a scan of your check with documents and we can
           process the image. No need to mail the orginal. You can also pay with
-          a credit card from our{' '}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
+          a credit card / venmo from our{' '}
+          <Link
+            to="/pricing"
             className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-            href="https://tenacious-legal-support.square.site/"
           >
-            Pricing page
-          </a>{' '}
-          and reference the payment when you send the documents.
+            Pricing
+          </Link>{' '}
+          page and reference the payment when you send the documents.
           <p className="text-center text-lg font-bold pt-2">We accept Venmo</p>
           <div className="md:flex-row md:justify-center flex flex-col items-center">
             <a href="https://venmo.com/u/SeanCapps">
