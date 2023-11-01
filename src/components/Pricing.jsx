@@ -139,7 +139,7 @@ const Pricing = () => {
     },
     {
       id: 20,
-      name: 'Rupert(name limits/southside)',
+      name: 'Rupert city limits/Southside',
       miles: 47,
       zip: '83350',
       price: 1500, // Updated price
@@ -181,7 +181,7 @@ const Pricing = () => {
     },
     {
       id: 26,
-      name: 'North Rupert/Acequia',
+      name: 'Rupert Northside/Acequia',
       miles: 55,
       zip: '83350',
       price: 2000, // Updated price
@@ -274,8 +274,9 @@ const Pricing = () => {
   const [_selectedCity, setSelectedCity] = useState(null);
   const [cityPrice, setCityPrice] = useState(basePrice);
   const [optionPrice, setOptionPrice] = useState(0);
+  const [printPrice, setPrintPrice] = useState(0);
   const [entityValue, setEntityValue] = useState(1);
-  const [printValue, setPrintValue] = useState(26);
+  const [printValue, setPrintValue] = useState(0);
   const [showExtraControls, setShowExtraControls] = useState(false);
   const [showPrintFeeControls, setShowPrintFeeControls] = useState(false);
   const handlePersonIncrement = () => {
@@ -301,35 +302,39 @@ const Pricing = () => {
   };
   const handlePrintFeeIncrement = () => {
     setPrintValue(printValue + 1);
-    setOptionPrice((prevOptionPrice) => prevOptionPrice + printPagePrice);
+    setPrintPrice(printPrice + printPagePrice);
   };
   const handlePrintFeeDecrement = () => {
     if (printValue > 26) {
       setPrintValue(printValue - 1);
-      setOptionPrice(optionPrice - printPagePrice);
+      setPrintPrice(printPrice - printPagePrice);
     }
   };
   const handleExtraPrintFeeChange = (event) => {
     setShowPrintFeeControls(event.target.checked);
-    if (event.target.checked) {
-      setOptionPrice(
-        (prevOptionPrice) => prevOptionPrice + printValue * printPagePrice
-      );
+    if (event.target.checked && printValue === 0) {
+      setPrintValue(26);
+      setPrintPrice(26 * printPagePrice);
     } else {
-      setOptionPrice(
-        (prevOptionPrice) => prevOptionPrice - printValue * printPagePrice
-      );
+      setPrintPrice(0);
+    }
+    if (event.target.checked && printValue !== 0 && printValue >= 26) {
+      setPrintPrice(printValue * printPagePrice);
     }
   };
   const handlePrintFeeChange = (e) => {
     const newValue = parseInt(e.target.value, 10);
+
     if (!Number.isNaN(newValue) && newValue <= 5000) {
       setPrintValue(newValue);
-      setOptionPrice((prevOptionPrice) => {
-        // Calculate the new optionPrice based on the previous value
-        const priceDifference = (newValue - printValue) * printPagePrice;
-        return prevOptionPrice + priceDifference;
-      });
+      if (newValue >= 26) {
+        setPrintPrice(newValue * printPagePrice);
+      } else {
+        setPrintPrice(0);
+      }
+    } else {
+      setPrintValue('');
+      setPrintPrice(0);
     }
   };
 
@@ -338,7 +343,15 @@ const Pricing = () => {
       value: city.id,
       label: city.name,
     }))
-    .sort((a, b) => a.label.localeCompare(b.label));
+    .sort((a, b) => {
+      if (a.label === 'Twin Falls') {
+        return -1;
+      }
+      if (b.label === 'Twin Falls') {
+        return 1;
+      }
+      return a.label.localeCompare(b.label);
+    });
   const handleRushChange = (event) => {
     if (event.target.checked) {
       setOptionPrice(optionPrice + rushPrice);
@@ -432,8 +445,8 @@ const Pricing = () => {
           <div className="flex justify-center mt-3 mx-5">
             <label className="flex items-center space-x-2">
               <span>
-                Print fees only apply beyond 25 pages (
-                {(printPagePrice / 100).toFixed(2)} /page)
+                Print fees apply above 25 pages ($
+                {(printPagePrice / 100).toFixed(2)}/page)
               </span>
               <input type="checkbox" onChange={handleExtraPrintFeeChange} />
             </label>
@@ -475,12 +488,12 @@ const Pricing = () => {
       </div>
       <div className="col-span-12">
         <h2 className="mt-12 text-4xl dark:text-white md:text-6xl xl:text-10xl text-center font-bold font-heading tracking-px-n leading-none">
-          ${((cityPrice + optionPrice) / 100).toFixed(2)}
+          ${((cityPrice + optionPrice + printPrice) / 100).toFixed(2)}
         </h2>
         <div className="flex flex-col items-center pt-8">
           <a
             href={`https://venmo.com/SeanCapps?txn=pay&amount=${(
-              (cityPrice + optionPrice) /
+              (cityPrice + optionPrice + printPrice) /
               100
             ).toFixed(2)}`}
             target="_blank"
@@ -492,8 +505,9 @@ const Pricing = () => {
               alt="Venmo Icon link"
             />
           </a>
-          <p className="text-center text-lg font-bold">
-            Pay ${((cityPrice + optionPrice) / 100).toFixed(2)} with Venmo
+          <p className="text-center text-lg font-bold mb-12">
+            Pay ${((cityPrice + optionPrice + printPrice) / 100).toFixed(2)}{' '}
+            with Venmo
           </p>
         </div>
       </div>
@@ -501,7 +515,7 @@ const Pricing = () => {
       <hr className="col-span-12 h-px my-2 bg-gray-200 border-0 dark:bg-gray-300 my-12" />
       <div className="col-span-12">
         {' '}
-        <h2 className="mb-4 text-4xl dark:text-white md:text-6xl xl:text-10xl text-center font-bold font-heading tracking-px-n leading-none">
+        <h2 className="mb-4 mt-12   text-4xl dark:text-white md:text-6xl xl:text-10xl text-center font-bold font-heading tracking-px-n leading-none">
           Skip Trace Fee
         </h2>
       </div>

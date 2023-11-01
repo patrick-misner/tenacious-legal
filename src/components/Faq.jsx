@@ -143,15 +143,22 @@ const Faq = () => {
         </AccordionHeader>
         <AccordionBody className="dark:text-slate-400">
           Yes, you can send a scan of your check with documents and we can
-          process the image. No need to mail the orginal. You can also pay with
-          a credit card / venmo from our{' '}
+          process the image. No need to mail the orginal. You can get a quote on
+          our{' '}
           <Link
             to="/pricing"
             className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
           >
             Pricing
           </Link>{' '}
-          page and reference the payment when you send the documents.
+          page. If you're paying by credit card, use the tool on our pricing
+          page and e-mail{' '}
+          <a
+            className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+            href="mailto:sean@tenacious.legal"
+          >
+            sean@tenacious.legal
+          </a>
           <p className="text-center text-lg font-bold pt-2">We accept Venmo</p>
           <div className="md:flex-row md:justify-center flex flex-col items-center">
             <a href="https://venmo.com/u/SeanCapps">
