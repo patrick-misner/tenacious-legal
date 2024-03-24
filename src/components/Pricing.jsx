@@ -30,7 +30,7 @@ const Pricing = () => {
       name: 'Kimberly',
       miles: 8,
       zip: '83341',
-      price: 0, // Updated price
+      price: 500, // Updated price
     },
     {
       id: 5,
@@ -132,133 +132,182 @@ const Pricing = () => {
     },
     {
       id: 19,
+      name: 'Pleasant Valley',
+      miles: 41,
+      zip: '83634',
+      price: 1000, // Updated price
+    },
+    {
+      id: 20,
       name: 'Heyburn',
       miles: 45,
       zip: '83336',
       price: 1500, // Updated price
     },
     {
-      id: 20,
-      name: 'Rupert city limits/Southside',
+      id: 21,
+      name: 'Rupert Southside',
       miles: 47,
       zip: '83350',
       price: 1500, // Updated price
     },
     {
-      id: 21,
+      id: 22,
+      name: 'Rupert',
+      miles: 47,
+      zip: '83350',
+      price: 1500, // Updated price
+    },
+    {
+      id: 23,
       name: 'Albion',
       miles: 60,
       zip: '83311',
       price: 2000, // Updated price
     },
     {
-      id: 22,
+      id: 24,
       name: 'Declo',
       miles: 51,
       zip: '83323',
       price: 2000, // Updated price
     },
     {
-      id: 23,
+      id: 25,
       name: 'Glenns Ferry',
       miles: 60,
       zip: '83623',
       price: 2000, // Updated price
     },
     {
-      id: 24,
-      name: 'King Hill/Paradise Valley',
+      id: 26,
+      name: 'King Hill',
       miles: 55,
       zip: '83633',
       price: 2000, // Updated price
     },
     {
-      id: 25,
+      id: 27,
+      name: 'Paradise Valley',
+      miles: 55,
+      zip: '83633',
+      price: 2000, // Updated price
+    },
+    {
+      id: 28,
       name: 'Jackpot, NV',
       miles: 50,
       zip: '89825',
       price: 2000, // Updated price
     },
     {
-      id: 26,
-      name: 'Rupert Northside/Acequia',
+      id: 29,
+      name: 'Rupert Northside',
       miles: 55,
       zip: '83350',
       price: 2000, // Updated price
     },
     {
-      id: 27,
+      id: 30,
+      name: 'Acequia',
+      miles: 55,
+      zip: '83350',
+      price: 2000, // Updated price
+    },
+    {
+      id: 31,
       name: 'Idahome',
       miles: 67,
       zip: '83323',
       price: 3000, // Updated price
     },
     {
-      id: 28,
+      id: 32,
       name: 'Oakley',
       miles: 63,
       zip: '83346',
       price: 3000, // Updated price
     },
     {
-      id: 29,
+      id: 33,
       name: 'Elba',
       miles: 75,
       zip: '83342',
       price: 4000, // Updated price
     },
     {
-      id: 30,
+      id: 34,
       name: 'Malta',
       miles: 75,
       zip: '83342',
       price: 4000, // Updated price
     },
     {
-      id: 31,
+      id: 35,
       name: 'Almo',
       miles: 86,
       zip: '83312',
       price: 5500, // Updated price
     },
     {
-      id: 32,
+      id: 36,
       name: 'Shoshone',
       miles: 25,
       zip: '83352',
       price: 1500, // Updated price
     },
     {
-      id: 33,
+      id: 37,
       name: 'Dietrich',
       miles: 33,
       zip: '83324',
       price: 1500, // Updated price
     },
     {
-      id: 34,
+      id: 38,
       name: 'Richfield',
       miles: 41,
       zip: '83349',
       price: 2000, // Updated price
     },
     {
-      id: 35,
-      name: 'Bellevue/Carey/Fairfield',
+      id: 39,
+      name: 'Bellevue',
       miles: 0,
-      zip: '',
+      zip: '83313',
       price: 3500, // Updated price
     },
     {
-      id: 36,
+      id: 40,
+      name: 'Carey',
+      miles: 0,
+      zip: '83320',
+      price: 3500, // Updated price
+    },
+    {
+      id: 41,
+      name: 'Fairfield',
+      miles: 0,
+      zip: '83327',
+      price: 3500, // Updated price
+    },
+    {
+      id: 42,
       name: 'Hailey',
       miles: 0,
       zip: '',
       price: 4500, // Updated price
     },
     {
-      id: 37,
-      name: 'Ketchum/Sun Valley',
+      id: 43,
+      name: 'Ketchum',
+      miles: 0,
+      zip: '',
+      price: 5500, // Updated price
+    },
+    {
+      id: 44,
+      name: 'Sun Valley',
       miles: 0,
       zip: '',
       price: 5500, // Updated price
