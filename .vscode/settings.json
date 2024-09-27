@@ -27,7 +27,7 @@
     }
   ],
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "[javascriptreact]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
