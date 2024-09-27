@@ -72,7 +72,7 @@ const Pricing = () => {
       name: 'Murtaugh',
       miles: 22,
       zip: '83344',
-      price: 500, // Updated price
+      price: 1000, // Updated price
     },
     {
       id: 11,
@@ -320,6 +320,7 @@ const Pricing = () => {
   const entityPrice = 2000;
   const locationPrice = 5500;
   const rushPrice = 3000;
+  const notaryPrice = 1000;
   const [_selectedCity, setSelectedCity] = useState(null);
   const [cityPrice, setCityPrice] = useState(basePrice);
   const [optionPrice, setOptionPrice] = useState(0);
@@ -421,6 +422,13 @@ const Pricing = () => {
       setOptionPrice(optionPrice + locationPrice);
     } else {
       setOptionPrice(optionPrice - locationPrice);
+    }
+  };
+  const handleNotaryChange = (event) => {
+    if (event.target.checked) {
+      setOptionPrice(optionPrice + notaryPrice);
+    } else {
+      setOptionPrice(optionPrice - notaryPrice);
     }
   };
   return (
@@ -528,10 +536,16 @@ const Pricing = () => {
           )}
         </div>
 
-        <div className="flex justify-center mb-10 mt-3 mx-5">
+        <div className="flex justify-center mt-3 mx-5">
           <label className="flex items-center space-x-2">
             <span>Location w/ service ($55)</span>
             <input type="checkbox" onChange={handleLocationChange} />
+          </label>
+        </div>
+        <div className="flex justify-center mb-10 mt-3 mx-5">
+          <label className="flex items-center space-x-2">
+            <span>Notary fee ($10)</span>
+            <input type="checkbox" onChange={handleNotaryChange} />
           </label>
         </div>
       </div>

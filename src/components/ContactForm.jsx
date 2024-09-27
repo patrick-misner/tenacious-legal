@@ -15,6 +15,15 @@ const ContactForm = () => {
     setIsLoading(true);
     setTimeout(3000);
 
+    // Check the honeypot field
+    const honeypot = form.current.querySelector('input[name="honeypot"]').value;
+    if (honeypot) {
+      setIsLoading(false);
+      setShowError(true);
+      console.log('Spam detected.');
+      return;
+    }
+
     emailjs
       .sendForm(
         'service_99yf77q',
@@ -107,6 +116,23 @@ const ContactForm = () => {
                       {count} / 750
                     </div>
                   </div>
+                </div>
+                {/* Honeypot Field - Hidden from users */}
+                <div className="col-span-12 hidden">
+                  <label
+                    htmlFor="honeypot"
+                    className="block text-sm font-medium leading-6 text-gray-900 dark:text-slate-400"
+                  >
+                    Leave this field blank
+                  </label>
+                  <input
+                    type="text"
+                    name="honeypot"
+                    id="honeypot"
+                    className="hidden"
+                    tabIndex="-1"
+                    autoComplete="off"
+                  />
                 </div>
               </div>
             </div>

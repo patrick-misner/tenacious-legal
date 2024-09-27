@@ -117,7 +117,7 @@ const Faq = () => {
           Do you charge for notary if needed?
         </AccordionHeader>
         <AccordionBody className="mt-3 dark:text-slate-400">
-          Notary is included with our service fee.
+          Yes, our notary fee is $10.
         </AccordionBody>
       </Accordion>
       <Accordion
