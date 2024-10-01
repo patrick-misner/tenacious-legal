@@ -16,11 +16,11 @@ const ContactForm = () => {
     setTimeout(3000);
 
     // Check the honeypot field
-    const honeypot = form.current.querySelector('input[name="honeypot"]').value;
-    if (honeypot) {
+    const city = form.current.querySelector('input[name="city"]').value;
+    if (city) {
       setIsLoading(false);
       setShowError(true);
-      console.log('Spam detected.');
+      console.log('City Error');
       return;
     }
 
@@ -120,15 +120,15 @@ const ContactForm = () => {
                 {/* Honeypot Field - Hidden from users */}
                 <div className="col-span-12 hidden">
                   <label
-                    htmlFor="honeypot"
+                    htmlFor="city"
                     className="block text-sm font-medium leading-6 text-gray-900 dark:text-slate-400"
                   >
-                    Leave this field blank
+                    City
                   </label>
                   <input
                     type="text"
-                    name="honeypot"
-                    id="honeypot"
+                    name="city"
+                    id="city"
                     className="hidden"
                     tabIndex="-1"
                     autoComplete="off"
