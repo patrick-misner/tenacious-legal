@@ -1,10 +1,6 @@
 import ContactDetails from '../ContactDetails';
 import Footer from '../Footer';
 
-{
-  /* import ContactForm from '../ContactForm'; */
-}
-
 const ContactPage = () => (
   <>
     {/* 
