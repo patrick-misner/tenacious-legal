@@ -4,7 +4,12 @@ import Footer from '../Footer';
 
 const ContactPage = () => (
   <>
-    <ContactForm />
+    {/* 
+      Per Sean's request, we are removing this contact form. 
+      To enable it just uncomment and md:col-span-6
+      to parent div class of ContactDetails component 
+    */}
+    {/* <ContactForm /> */}
     <ContactDetails className="md:order-first" />
     <Footer />
   </>
