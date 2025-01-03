@@ -7,7 +7,7 @@ const ContactDetails = () => {
     });
   };
   return (
-    <div className="col-span-12 md:col-span-6 px-4 mb-5 order-first md:order-none">
+    <div className="col-span-12 px-4 mb-5 order-first md:order-none">
       <p className="text-center font-bold text-3xl dark:text-white mb-5">
         Contact Details
       </p>
