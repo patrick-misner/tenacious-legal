@@ -317,7 +317,7 @@ const Pricing = () => {
   const basePrice = 6500;
   const skipTracePrice = 9500;
   const printPagePrice = 16;
-  const entityPrice = 2000;
+  const entityPrice = 3000;
   const locationPrice = 5500;
   const rushPrice = 3000;
   const notaryPrice = 1000;
