@@ -15,9 +15,9 @@ const PricingHeader = () => (
         </a>{' '}
         for an invoice.
       </h3>
-      <p>
+      <h3 className="mb-8 underline text-4l dark:text-white md:text-6l xl:text-10l text-center font-bold font-heading tracking-px-n leading-none">
         Credit card payments are subject to a 3.9% fee.
-      </p>
+      </h3>
       {/* <p className="mb-7 text-sm text-indigo-600 text-center font-semibold uppercase tracking-px">
         Pricing calculator
       </p> */}
